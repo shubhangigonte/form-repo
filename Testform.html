@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        class stud
+        {
+        stud (str)  
+        {
+            let grade='A';
+            var res;
+            var m1,m2,m3,m4,m5;
+            var mks=m1+m2+m3+m4+m5; // use variables for calculate marks
+            var a=new array(); //declare array  with object
+            var tot; // use to calculate percentage
+            tot=mks/5;
+        let res1=parseInt(avg)/5; 
+        document.write(res1);
+        document.write(tot);
+        alert("res1"); // dispaly alert message on output screen
+        switch(grade) // cases for grades of percentage 
+        {
+                case A:result="A Grade";
+                    document.write("90% and above"); // display  on output screen
+                    break;
+                case 'B' :result="B Grade" // display the grade reasult case wise
+                    // document.write("80-80%"); 
+                    break;
+                case 'C':result="C Grade";
+                    // document.write("70-79%");
+                    break;
+                case 'D':result="D Grade";
+                    // document.write("60-69%");
+                    break;
+                case 'E':result="E Grade";
+                    // document.write("below 60%");
+                    break;
+                 default:
+                    result="invalid"; // display invalid result
+                    // document.write("invalid case");   
+            }
+            document.write(res+"<br>");
+            document.write(per+"<br>"); 
+        }
+    } 
+    </script>
+    <style>
+        
+        .container{
+            background-color: orange;  
+            width:37%;
+            height:50%;
+            margin-top:20%;
+            padding-top:10px;
+            padding-bottom: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 10px;
+        }
+        .c1{
+            padding:10px;
+            width:240px;
+            /* padding:1px; */
+            height:15px;
+            margin:7px;
+            background-color:rgb(255, 195, 84) ;
+           /* background-color: antiquewhite; */
+            color:white;
+            border: none;
+        }
+        .c3{
+            width:220px;
+            height:40px;
+            border-radius: 15px;
+            border: none;
+            margin-left: 20px;
+            background-color: rgb(213, 207, 204);
+            margin-top:10px;
+            font-family: sans-serif;
+            font-size:large;
+        }
+        h3{
+            font-family: sans-serif;
+            font-weight: 20px;
+            background-color: antiquewhite;
+            padding:10px;
+            border-radius: 15px;
+        }
+        .c4{
+            background-color: rgb(243, 168, 30);
+            width:50px;
+            height:20px;
+        }
+        .c3:hover{
+            color:bisque;
+        background-color: black;
+        }
+        /* use input class to apply css style on input container input */
+
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <form >
+            <h3>Student Details</h3>
+            <div class="c2">
+                <label for="">Name</label>
+                <input type="text" name="name"  placeholder="Enter Name"class="c1"/> 
+                <!-- // take input from user -->
+            </div>
+            <div class="c2">
+                <label for="">Maths</label>
+                 <!-- // take input from user -->
+                <input type="text" name="name" placeholder="Enter Marks"class="c1"/>
+            </div>
+            <div class="c2">
+                <label for="">History</label>
+                 <!-- // take input from user -->
+                <input type="text" name="name" placeholder="Enter Marks" class="c1" />
+            </div>
+            <div class="c2">
+                <label for="">Physics</label>
+                <input type="text" name="name" placeholder="Enter Marks" class="c1"/>
+            </div>
+            <div class="c2">
+                <label for="">Chemistry</label>
+                <input type="text" name="name"  placeholder="Enter Marks"class="c1"/>
+            </div>
+            <div class="c2">
+                <label for="">Biology</label>
+                <input type="text"   placeholder="Enter Marks" class="c1"/>
+                
+                <!-- <span>
+                <select id="" col="10px" row="2" color="rgb(243, 168, 30)" class="c4">
+                    <option value="">90%</option>
+                    <option value="">80-89%</option>
+                    <option value="">70-79%</option>
+                    <option value="">60-69%</option>
+                    <option value="">below 60%</option>
+                    <option value="">Biology</option> -->
+                <!-- </select>  -->
+            <!-- </span> -->
+            
+            <!-- </input> -->
+
+            </div>
+            <div>
+                <input type="button" value="submit" class="c3"  id='s' onclick="stud(this.value)"/>
+                <!-- <h1 id="s"></h1> -->
+            </div>
+        </form>
+    </div>
+</center>
+</body>
+</html>
